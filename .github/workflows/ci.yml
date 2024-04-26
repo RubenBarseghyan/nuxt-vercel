@@ -31,10 +31,10 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-#          90eb9821-dc18-440e-b11d-5cf72d31701a
+#          990eb9821-dc18-440e-b11d-5cf72d31701a
 
       - name: Deploy to Vercel
         run: npm run deploy:vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-#          F2LS29Lh69Itdj4wkvy06N1j
+#          FF2LS29Lh69Itdj4wkvy06N1j
