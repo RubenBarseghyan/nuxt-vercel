@@ -33,6 +33,6 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Deploy to Vercel
-        run: npm run deploy:vercel
+        run: vercel --prod
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
