@@ -42,11 +42,6 @@ jobs:
       - name: Run tests 🧪
         run: npm run test
 
-      - name: Upload coverage to Codecov
-          uses: codecov/codecov-action@v2
-          with:
-            token: ${{ secrets.CODECOV_TOKEN }}
-
         - name: Deploy to Vercel
           run: npm run deploy:vercel
           env:
